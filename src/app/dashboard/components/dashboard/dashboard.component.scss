@@ -1,0 +1,158 @@
+.content-body {
+    padding-top: 8px;
+    margin: 16px;
+}
+
+.applicant-toolbar {
+    background-color: rgb(207, 218, 228);
+}
+
+mat-grid-list {
+    margin: 8px;
+}
+
+mat-grid-tile {
+    background-color: white;
+}
+
+#toolbar-title, #signed-in-as-label {
+    font-size: medium;
+}
+
+#label-text {
+    font-weight: 425;
+    font-size: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+#signed-in-as {
+    background-color: rebeccapurple;
+    font-weight: lighter;
+    color: whitesmoke;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 0.5em;
+}
+
+.mat-card {
+    background-color: rgba(255, 255, 255, 0.882);
+}
+
+#left-content-container {
+    float: left;
+    width: 30%;
+}
+
+#right-content-container {
+    float: right;
+    width: 68.5%;
+}
+
+#left-content-container, #right-content-container {
+    padding-bottom: 16px;
+}
+
+#pending-req-item {
+    width: 100%;
+}
+
+#pending-req-item .mat-card {
+    height: 250px;
+}
+
+#pending-req-item .mat-card-actions {
+    padding-bottom: 12.5px;
+}
+
+#left-content, #right-content, #pending-reqs-content {
+    padding: 8px;
+}
+
+#left-content {
+    height: 750px;
+}
+
+#right-content {
+    height: 750px;
+}
+
+#permit-status-statistics-content {
+    height: 600px;
+}
+
+#pending-reqs-content {
+    padding: 16px;
+    height: 625px;
+    overflow-y: scroll;
+    background-color: rgb(25, 25, 25, 0.15);
+    border-radius: 5px;
+}
+
+#pss-item {
+    background-color: dimgray;
+    border-width: 1.25px;
+    border-style: solid;
+    border-radius: 5px;
+    color: whitesmoke;
+    padding-top: 1.5px;
+    padding-bottom: 1.5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#no-data-container {
+    padding: 50px;
+    text-align: center;
+    font-size: medium;
+    color: grey;
+    font-weight: 425;
+}
+
+.req-state-cols {
+    overflow: hidden;
+    padding-left: 15px;
+}
+
+#req-state-col {
+    float: left;
+    width: 200px;
+    margin-right: 5px;
+}
+
+#req-state-arrow-col {
+    float: left;
+    width: 30px;
+    height: 5px;
+}
+
+#req-state-text {
+    font-weight: 450;
+    font-size: 14px;
+}
+
+.canc-term-reqs-states {
+    margin-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+#canc-term-reqs-state {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    border-width: 1.25px;
+    border-style: solid;
+    color: white;
+    border-radius: 5px;
+    width: 40%;
+}

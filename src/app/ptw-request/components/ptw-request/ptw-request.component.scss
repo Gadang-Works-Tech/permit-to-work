@@ -1,0 +1,335 @@
+.content-body {
+    padding-top: 8px;
+    padding-bottom: 16px;
+    margin: 16px;
+}
+
+.applicant-toolbar {
+    background-color: rgb(207, 218, 228);
+}
+
+#toolbar-title {
+    font-size: medium;
+}
+
+.toolbar-spacer {
+    flex: 1 1 auto;
+}
+
+#ptw-req-stp {
+    background-color: rgba(255, 255, 255, 0.882);
+    border-radius: 10px;
+}
+
+.basic-info-form, 
+.safety-measures-form,
+.personnel-dets-form {
+    margin: 16px;
+}
+
+.basic-info-form,
+.safety-measures-form,
+.personnel-dets-form {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.section-title {
+    width: 100%;
+    height: 36px;
+    padding: 8px;
+    background-color: #339999; 
+    color: white; 
+    border-radius: 5px;
+}
+
+.section-title-desc {
+    font-size: medium;
+    font-weight: lighter;
+}
+
+.subsection-title {
+    font-size: medium;
+    font-weight: 450;
+}
+
+.required-label {
+    color: crimson;
+}
+
+.permit-type-options, 
+.location-of-work-options, 
+.loc-sector-options, 
+.task-desc-input, 
+.wah-s1-ard-name-input,
+.wah-s1-ard-nric-or-fin-no-input,
+.wah-s1-ard-org-type-input,
+.wah-s1-ard-org-name-input,
+.wah-s1-ard-dep-name-input,
+.wah-s1-ard-contact-no-input,
+.cs-s1-ard-name-input,
+.cs-s1-ard-nric-or-fin-no-input,
+.cs-s1-ard-org-type-input,
+.cs-s1-ard-org-name-input,
+.cs-s1-ard-dep-name-input,
+.cs-s1-ard-contact-no-input,
+.cs-s1-ph-input,
+.apl-name-input, 
+.apl-nric-or-fin-no-input, 
+.apl-org-type-options, 
+.apl-org-name-options, 
+.apl-dep-name-input, 
+.apl-contact-no-input, 
+.apl-email-input {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+mat-grid-list {
+    background-color: rgb(252, 252, 252);
+    width: 100%;
+}
+
+mat-grid-list mat-grid-tile-header {
+    font-weight: 425; 
+}
+
+mat-grid-list mat-grid-tile {
+    font-weight: medium;
+    border-width: 0.25px;
+    border-style: solid;
+    border-color: darkgrey;
+}
+
+::ng-deep .mat-step-header .mat-step-icon-selected {
+    background-color: #339999; 
+ }
+
+ mat-form-field{
+    width: 100%;
+ }
+
+.hwp-info-container,
+.cwp-info-container,
+.ep-info-container,
+.wahp-info-container,
+.csp-info-container,
+.apl-dcl-container {
+    width: 95%;
+    padding: 24px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    border-radius: 0.5em;
+    border-width: 1.5px;
+    border-style: solid;
+}
+
+.permit-type-info-container, .apl-dcl {
+    display: flex;
+    align-items: center;
+}
+
+.hwp-info-container {
+    background-color: beige;
+    border-color: gray;
+}
+
+.cwp-info-container {
+    background-color: azure;
+    border-color: gray;
+}
+
+.ep-info-container {
+    background-color: dodgerblue;
+    color: white;
+    border-color: gray;
+}
+
+.wahp-info-container {
+    background-color: whitesmoke;
+    border-color: gray;
+}
+
+.apl-dcl-container {
+    background-color: rgb(207, 218, 228);
+    border-color: gray;
+}
+
+#apl-dcl-checkbox {
+    white-space: normal;
+}
+
+.mat-checkbox.mat-accent .mat-checkbox-inner-container {
+    margin: 2px 8px auto 0;
+}
+
+.csp-info-container {
+    background-color: lightcyan;
+    border-width: 1.5px;
+    border-style: solid;
+    border-color: gray;
+}
+
+.start-end-dates-container {
+    display: inline;
+    align-items: center;
+}
+
+.start-date-picker, 
+.end-date-picker {
+    margin-right: 2.5%;
+}
+
+.no-of-workers-input {
+    margin-right: 2.5%;
+}
+
+.start-time-picker,
+.end-time-picker {
+    width: 40%;
+}
+
+.start-date-picker, 
+.end-date-picker {
+    width: 57.5%;
+}
+
+.no-of-workers-input, 
+.no-of-spvs-input {
+    width: 48.75%;
+}
+
+// ------------------------------WAH, HW, CW, E------------------------------
+
+.cmi-col {
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.cmi-specify-col {
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#cmi-left-col,
+#cmi-mid-col, 
+#cmi-right-col,
+#cmi-specify-mid-col {
+    float: left;
+}
+
+#cmi-left-col {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 5px;
+}
+
+#cmi-mid-col {
+    width: 225px;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#cmi-right-col {
+    width: fit-content;
+    height: 50px;
+    padding-bottom: 10px;
+}
+
+#cmi-specify-mid-col {
+    width: 225px;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.s1-cmi-remarks-input {
+    width: 525px;
+}
+
+.s1-cmi-specify-input {
+    width: 760px;
+}
+
+// --------------------------------------------------------------------------
+// ----------------------------------CS--------------------------------------
+
+.cs-cmi {
+    overflow: hidden;
+    width: fit-content;
+}
+
+.cs-cmi-per,
+.cs-cmi-ppe {
+    float: left;
+    width: fit-content;
+    margin-bottom: 25px;
+}
+
+#cs-cmi-per-title,
+#cs-cmi-ppe-title {
+    margin-bottom: 20px;
+}
+
+.cs-cmi-per {
+    margin-right: 0px;
+}
+
+.cs-cmi-per-col,
+.cs-cmi-ppe-col {
+    overflow: hidden;
+    width: 100%;
+}
+
+#cs-cmi-per-left-col,
+#cs-cmi-per-right-col,
+#cs-cmi-ppe-left-col,
+#cs-cmi-ppe-right-col,
+#cs-cmi-ppe-col {
+    float: left;
+    margin-bottom: 10px;
+    padding-top: 15px;
+}
+
+#cs-cmi-per-left-col,
+#cs-cmi-per-right-col,
+#cs-cmi-ppe-left-col,
+#cs-cmi-ppe-right-col {
+    height: 30px;
+}
+
+#cs-cmi-per-left-col,
+#cs-cmi-ppe-left-col {
+    width: 400px;
+}
+
+#cs-cmi-per-right-col,
+#cs-cmi-ppe-right-col {
+    width: 200px;
+    padding-left: 10px;
+}
+
+#cs-cmi-ppe-col {
+    width: 50%;
+}
+
+.cs-s1-cmi-ppe-specify-input {
+    width: 100%;
+}
+
+// --------------------------------------------------------------------------
+
+.mat-radio-button ~ .mat-radio-button {
+    margin-left: 12.5px;
+}
+
+.apl-email-input-col{
+    float: left;
+}
+.apl-email-input-row:after{
+    content: "";
+    display: block;
+    clear: both;
+}

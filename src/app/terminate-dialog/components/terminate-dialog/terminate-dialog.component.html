@@ -1,0 +1,51 @@
+<div class = "dialog-box" *ngFor = "let toTerminate of this.targetPtw">
+    <h2 mat-dialog-title>Permit Closure / Termination</h2>
+    <br>
+    <div mat-dialog-content>
+        <div id = "dialog-content-desc">
+            <div>
+                <mat-label id = "label-text">Given reason:&emsp;</mat-label><mat-label>{{ toTerminate.ptwStatus.taskStatus }}</mat-label>
+            </div>
+            <div>
+                <mat-label id = "label-text">Remarks:&emsp;</mat-label><mat-label>{{ toTerminate.ptwStatus.remarks }}</mat-label>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class = "status-res" *ngIf = "toTerminate.ptwStatus.taskStatus != ''">
+        <mat-label style = "font-weight: 450"><mat-icon>warning</mat-icon>&emsp;WARNING</mat-label>
+        <br><br>
+        <mat-label>⯁ <u>Permit status</u> will be deemed </mat-label>
+        <mat-label style = "font-weight: 450;" *ngIf = "toTerminate.ptwStatus.taskStatus == 'Cond. Changed'">TERMINATED</mat-label>
+        <mat-label style = "font-weight: 450;" *ngIf = "toTerminate.ptwStatus.taskStatus == 'Completed'">CLOSED</mat-label>
+        <mat-label>.</mat-label>
+        <br>
+        <mat-label>⬦ This action <mat-label style = "font-weight: 450;">CANNOT</mat-label> be undone once <mat-label style = "font-weight: 450;" *ngIf = "toTerminate.ptwStatus.taskStatus == 'Completed'">CLOSE THIS PERMIT</mat-label>
+        <mat-label style = "font-weight: 450;" *ngIf = "toTerminate.ptwStatus.taskStatus == 'Overtime' || toTerminate.ptwStatus.taskStatus == 'Cond. Changed'">TERMINATE THIS PERMIT</mat-label> is pressed.</mat-label>
+        <br>
+        <mat-label>⬦ You will have to request for a new permit to re-validate.</mat-label>
+    </div>
+    <br>
+    <div class = "type-to-confirm" *ngIf = "toTerminate.ptwStatus.taskStatus == 'Completed'">
+        <mat-label style = "color: brown">Type <i>close</i> to continue*&emsp;</mat-label>
+        <mat-form-field class = "type-to-confirm-input" appearance = "outline" floatLabel = "never">
+            <input required matInput [(ngModel)] = "this.typeToConfirmInput">
+        </mat-form-field>
+    </div>
+    <div class = "type-to-confirm" *ngIf = "toTerminate.ptwStatus.taskStatus == 'Cond. Changed'">
+        <mat-label style = "color: brown">Type <i>terminate</i> to continue*&emsp;</mat-label>
+        <mat-form-field class = "type-to-confirm-input" appearance = "outline" floatLabel = "never">
+            <input required matInput [(ngModel)] = "this.typeToConfirmInput">
+        </mat-form-field>
+    </div>
+    <div mat-dialog-actions>
+        <button 
+            mat-button color = "warn" 
+            [disabled] = "this.typeToConfirmInput != 'close' && this.typeToConfirmInput != 'terminate'"
+            (click) = "this.determineNewPermitStatus(toTerminate.ptwStatus.taskStatus); this.terminatePtw(toTerminate.ptwStatus.taskStatus, this.newPermitStatus);">
+            <mat-label *ngIf = "toTerminate.ptwStatus.taskStatus == 'Completed'">CLOSE THIS PERMIT</mat-label>
+            <mat-label *ngIf = "toTerminate.ptwStatus.taskStatus == 'Cond. Changed'">TERMINATE THIS PERMIT</mat-label>
+        </button>
+        <button mat-button mat-dialog-close>Cancel</button>
+    </div>
+</div>

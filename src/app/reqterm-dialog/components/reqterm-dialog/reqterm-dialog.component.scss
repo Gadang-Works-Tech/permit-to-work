@@ -1,0 +1,31 @@
+.dialog-box {
+    width: 600px;
+}
+
+.mat-dialog-content {
+    height: 165px;
+}
+
+.mat-dialog-actions {
+    justify-content: flex-end;
+}
+
+mat-radio-group {
+    display: inline-grid;
+}
+
+.rft-option {
+    margin: 10px;
+}
+
+.status-remarks-input {
+    width: 100%;
+}
+
+.required-label {
+    color: crimson;
+}
+
+.mat-icon {
+    vertical-align: middle;
+}
